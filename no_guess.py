@@ -1,7 +1,9 @@
 #產生一個隨機整數(不印出來)
 #讓使用者重複輸入數字去猜
 import random
-r = random.randint(0, 100)
+u_range_min = int(input('輸入你想要猜的最小數字: '))
+u_guess_max = int(input('輸入你想要猜的最大數字: '))
+r = random.randint(u_range_min, u_guess_max)
 u_guess = 0
 retry_cnt = 0
 print('1~100,數字猜猜看')
